@@ -47,7 +47,7 @@ class PhotoMenu(App):
         loading_popup.open()
 
         def capture_complete(dt):
-            photo_filename = os.path.join(os.path.dirname(__file__), 'in', 'photo.png')
+            photo_filename = os.path.join(os.path.dirname(__file__), 'in', 'menu.png')
             self.camera.export_to_png(photo_filename)
             
             #Perfomes the OCR and Google Images API on the menu
